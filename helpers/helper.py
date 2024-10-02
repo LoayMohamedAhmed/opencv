@@ -5,11 +5,9 @@ def plot(images , titles, figsize ,filter,suptitle =""):
     # r and c are the number of rows and columns in the plot
     if imag_no%2 == 0 and imag_no>2:
         r = c = int(imag_no/2)
-        figsize = (15,8)
     else:
         r = 1
         c = imag_no
-        figsize = (15,5)
 
     plt.figure(figsize= figsize)
     plt.suptitle(suptitle)
